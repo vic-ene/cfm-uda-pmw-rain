@@ -1,0 +1,24 @@
+name: "sat_gpm_f18"
+num_classes: 2
+train_size: 97070
+  
+cnn_epochs: 3
+
+ch: 4
+h: 32
+w: 32
+ipc: 0
+
+class_to_idx:
+  "gpm": 0
+  "f18": 1
+
+norm_used: 'min_max'
+norm_used_choices:  ['min_max']
+
+path: "../../New_Satellite_Data/center_crop"
+
+path_test_quick_f18: "./huggingface_downloads/overlaps_gpm_f18_dt-900-year-2019_2.pickle"
+path_test_f18: "./huggingface_downloads/overlaps_gpm_f18_dt-900-year-2019_all.pickle"
+
+k_kept: 0
